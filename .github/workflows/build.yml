@@ -19,3 +19,7 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          with:
+          args: >
+            -Dsonar.projectKey=valen03-ml_sonarqube-practica
+            -Dsonar.organization=grupo05
